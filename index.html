@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owl Carousel</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--Owl Carousel is the full container-->
+    <div class="owl-carousel">
+
+<!--inner class is each person-->
+      <div class="inner">  
+        <div class="image"> 
+          <img src="https://scontent-cpt1-1.xx.fbcdn.net/v/t1.6435-9/123557730_3426563674124408_3125124184011337547_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeG30IrASZx-FU9UWkHaYZJ1o3De8lIYbmSjcN7yUhhuZIBDQcFgoM3KMod_J1Rrb_fCGcBbZk4tkbqJqwcHlR2n&_nc_ohc=cVeanh7fMOUAX-8CmQe&_nc_ht=scontent-cpt1-1.xx&oh=6063a9ce7630bd8e29d54930378e31d8&oe=60B7C273" alt="">
+        </div>
+        <h3>Aneeqah Jones</h3>
+        <h4>Software Developer</h4>
+           <q> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quis, alias quas sed, quasi quam expedita aspernatur aperiam adipisci modi voluptatem, molestiae quae aut natus delectus totam dolor praesentium laboriosam!</q>
+        </div>
+<!--close inner above here-->
+
+      <div class="inner">  
+        <div class="image"> 
+          <img src="./adam.jpeg" alt="">
+        </div>
+        <h3>Adam Africa</h3>
+        <h4>Software Developer</h4>
+           <q> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quis, alias quas sed, quasi quam expedita aspernatur aperiam adipisci modi voluptatem, molestiae quae aut natus delectus totam dolor praesentium laboriosam!</q>
+        </div>
+
+        <div class="inner">  
+          <div class="image"> 
+            <img src="https://scontent-cpt1-1.xx.fbcdn.net/v/t1.6435-9/56944984_400688740511470_6194845130197827584_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=174925&_nc_eui2=AeHLcfwLqu2wZfo07az08Y4dGqDRudYICscaoNG51ggKx218xBcSYVWYK9ZjL52RZKIZA-8DIcF20Sr_5sXoIv3Z&_nc_ohc=pXb_Sjw67EoAX8f74GL&_nc_ht=scontent-cpt1-1.xx&oh=a954930b064374558fa7deec92064c25&oe=60B715DA" alt="">
+          </div>
+          <h3>Ghiyaath Williams</h3>
+          <h4>Software Developer</h4>
+             <q> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quis, alias quas sed, quasi quam expedita aspernatur aperiam adipisci modi voluptatem, molestiae quae aut natus delectus totam dolor praesentium laboriosam!</q>
+          </div>
+
+          <div class="inner">
+            <div class="image"> 
+              <img src="emilio.jpeg">
+            </div>
+            <h3>Emilio Flandorp</h3>
+            <h4>Software Developer</h4>
+               <q>Wake up to reality nothing ever goes as planned in this world the longer you live the more you realize that only pain suffering and futility in this reality in this world wherever there is light there are always shadows as long as there is a concept of victory the vanquished will also exist. The selfish desire for peace give rise to war and hatred is born in order to protect love. These are all nexuses, causal relationships that cannot be separated.</q>
+            </div>
+
+            <div class="inner">  
+              <div class="image"> 
+                <img src="ronald.jpeg" alt="">
+              </div>
+              <h3>Ronald Teblanche</h3>
+              <h4>Software Developer</h4>
+                 <q> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quis, alias quas sed, quasi quam expedita aspernatur aperiam adipisci modi voluptatem, molestiae quae aut natus delectus totam dolor praesentium laboriosam!</q>
+              </div>
+   </div>
+   <!---close owl carousel here-->
+    </div>
+    <!-- Script tags under here -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 50,
+          loop: true,
+          stagePadding: 100,
+          dots: false,
+          autoplay: true,
+        });
+      });
+    </script>
+  </body>
+</html
